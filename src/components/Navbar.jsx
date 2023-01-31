@@ -55,6 +55,11 @@ const Menuitem = styled.div`
   cursor: pointer;
   margin-left: 25px;
 `;
+const Span = styled.span`
+  color: #ffffff;
+  background-color: #000000;
+  padding: 0 10px;
+`;
 
 const Navbar = () => {
   return (
@@ -68,7 +73,9 @@ const Navbar = () => {
           </SearchContainer>
         </Left>
         <Center>
-          <Logo>Tewo.</Logo>
+          <Logo>
+            Shop by <Span>Tewo.</Span>
+          </Logo>
         </Center>
         <Right>
           <Menuitem>REGISTER</Menuitem>
