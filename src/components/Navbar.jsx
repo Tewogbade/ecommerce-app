@@ -4,8 +4,11 @@ import { Search } from "@mui/icons-material";
 import Badge from "@mui/material/Badge";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 
+import { mobile } from "../responsive";
+
 const Container = styled.div`
   height: 60px;
+  ${mobile({ backgroundColor: "red" })}
 `;
 
 const Wrapper = styled.div`
