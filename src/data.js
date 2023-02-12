@@ -45,35 +45,35 @@ export const categories = [
 export const popularProducts = [
   {
     id: 1,
-    img: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80",
+    img: "https://images.asos-media.com/products/asos-design-tech-trainers-in-black-with-green-details/202802597-1-black?$n_480w$&wid=476&fit=constrain",
   },
 
   {
     id: 2,
-    img: "https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=600",
+    img: "https://images.asos-media.com/products/tommy-hilfiger-curve-logo-hoodie-in-green/204311334-1-frostedgreen",
   },
   {
     id: 3,
-    img: "https://images.pexels.com/photos/1462637/pexels-photo-1462637.jpeg?auto=compress&cs=tinysrgb&w=600",
+    img: "https://images.asos-media.com/products/new-balance-legends-tee-in-oatmeal/203692902-1-oatmeal",
   },
   {
     id: 4,
-    img: "https://images.pexels.com/photos/1468380/pexels-photo-1468380.jpeg?auto=compress&cs=tinysrgb&w=600",
+    img: "https://images.asos-media.com/groups/new-balance-members-club-short-set-in-black-exclusive-to-asos/94480-group-1?$n_480w$&wid=476&fit=constrain",
   },
   {
     id: 5,
-    img: "https://media.istockphoto.com/id/1174942908/photo/female-hand-holding-tote-bag-against-brown-background-empty-space.jpg?s=612x612&w=0&k=20&c=OQVeUjh21I-wJMRKeycXMx5hwPQlxO8uRqvxwVe2soM=",
+    img: "https://images.asos-media.com/products/topshop-canvas-tote-in-black/204093614-2?$n_480w$&wid=476&fit=constrain",
   },
   {
     id: 6,
-    img: "https://media.istockphoto.com/id/513075727/photo/blue-cap.jpg?s=612x612&w=0&k=20&c=FaOITmcdIbB2Cn3zsGK36uTt99RX8miQST0YQ6Um8hc=",
+    img: "https://images.asos-media.com/products/topshop-cotton-blend-bold-floral-ruffle-bardot-mini-dress-in-multi/201983078-2?$n_480w$&wid=476&fit=constrain",
   },
   {
     id: 7,
-    img: "https://images.pexels.com/photos/6289773/pexels-photo-6289773.jpeg?auto=compress&cs=tinysrgb&w=600",
+    img: "https://images.asos-media.com/products/aldo-alima-chunky-ankle-boot-with-zip-back-in-black/202168208-2?$n_480w$&wid=476&fit=constrain",
   },
   {
     id: 8,
-    img: "https://images.pexels.com/photos/1374128/pexels-photo-1374128.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    img: "https://images.asos-media.com/products/topshop-curve-high-waist-peg-trouser-in-khaki/203508168-2?$n_480w$&wid=476&fit=constrain",
   },
 ];
