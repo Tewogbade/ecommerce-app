@@ -120,8 +120,8 @@ const Button = styled.button`
 const Product = () => {
   return (
     <Container>
-      <Announcement />
       <Navbar />
+      <Announcement />
       <Wrapper>
         <ImgContainer>
           <Image src="https://img.shopperboard.com/24154657/32221365731488-3.jpg" />
