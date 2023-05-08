@@ -27,21 +27,21 @@ export const categories = [
   {
     id: 1,
     img: "https://images.pexels.com/photos/5886041/pexels-photo-5886041.jpeg",
-    title: "SHIRT STYLE",
+    title: "WOMEN STYLE",
     cat: "woman",
   },
 
   {
     id: 2,
-    img: "https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg",
-    title: "LOUNGEWEAR LOVE",
-    cat: "coat",
+    img: "https://content.asos-media.com/-/media/homepages/mw/2023/april/24-prime/mw_global_vests_moment_870x1110.jpg",
+    title: "MEN STYLE",
+    cat: "man",
   },
   {
     id: 3,
-    img: "https://images.pexels.com/photos/5480696/pexels-photo-5480696.jpeg",
-    title: "LIGHT JACKET",
-    cat: "jeans",
+    img: "https://images.asos-media.com/products/asos-design-boat-shoe-in-beige-suede-with-contrast-sole/201753947-2?$n_480w$&wid=476&fit=constrain",
+    title: "SHOES",
+    cat: "shoe",
   },
 ];
 
