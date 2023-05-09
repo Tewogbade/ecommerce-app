@@ -28,20 +28,20 @@ export const categories = [
     id: 1,
     img: "https://images.pexels.com/photos/5886041/pexels-photo-5886041.jpeg",
     title: "WOMEN STYLE",
-    cat: "woman",
+    cat: "Women",
   },
 
   {
     id: 2,
     img: "https://content.asos-media.com/-/media/homepages/mw/2023/april/24-prime/mw_global_vests_moment_870x1110.jpg",
     title: "MEN STYLE",
-    cat: "man",
+    cat: "Men",
   },
   {
     id: 3,
     img: "https://images.asos-media.com/products/asos-design-boat-shoe-in-beige-suede-with-contrast-sole/201753947-2?$n_480w$&wid=476&fit=constrain",
     title: "SHOES",
-    cat: "shoe",
+    cat: "Shoe",
   },
 ];
 
