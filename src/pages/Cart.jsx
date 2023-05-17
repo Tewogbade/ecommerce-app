@@ -187,7 +187,7 @@ const Cart = () => {
           amount: 5000,
           Authorization: KEY,
         });
-        history.push("/success", { data: res.data });
+        history("/success", { data: res.data });
       } catch {}
     };
     stripeToken && makeRequest();
