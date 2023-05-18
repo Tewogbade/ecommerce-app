@@ -136,9 +136,13 @@ const Product = () => {
   useEffect(() => {
     const getProduct = async () => {
       try {
-        const res = await publicRequest.get(`/products/find/${id}`);
+        const res = await publicRequest.get(
+          `https://ecommerse-app-api.onrender.com/api/products/find/${id}`
+        );
         setProduct(res.data);
-      } catch {}
+      } catch (err) {
+        console.error("Error fetching products:", err);
+      }
     };
     getProduct();
   }, [id]);

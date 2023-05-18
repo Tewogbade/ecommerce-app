@@ -20,14 +20,30 @@ const Products = ({ cat, filters, sort }) => {
       try {
         const res = await axios.get(
           cat
-            ? `http://localhost:5000/api/products?category=${cat}`
-            : "http://localhost:5000/api/products"
+            ? `https://ecommerse-app-api.onrender.com/api/products?category=${cat}`
+            : "https://ecommerse-app-api.onrender.com/api/products"
         );
         setProducts(res.data);
-      } catch (err) {}
+      } catch (err) {
+        console.error("Error fetching products:", err);
+      }
     };
     getProducts();
   }, [cat]);
+
+  // useEffect(() => {
+  //   const getProducts = async () => {
+  //     try {
+  //       const res = await axios.get(
+  //         cat
+  //           ? `http://localhost:5000/api/products?category=${cat}`
+  //           : "http://localhost:5000/api/products"
+  //       );
+  //       setProducts(res.data);
+  //     } catch (err) {}
+  //   };
+  //   getProducts();
+  // }, [cat]);
 
   useEffect(() => {
     cat &&
