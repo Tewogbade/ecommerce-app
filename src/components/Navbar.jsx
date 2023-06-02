@@ -51,6 +51,8 @@ const Center = styled.div`
 const Logo = styled.h1`
   font-size: 15px;
   font-weight: bold;
+  text-decoration: none;
+  text-decoration: none;
 
   ${mobile({ fontSize: "10px" })}
 `;
@@ -72,6 +74,7 @@ const Span = styled.span`
   color: #ffffff;
   background-color: #000000;
   padding: 0 10px;
+  text-decoration: none;
   ${mobile({ fontSize: "20px" })}
 `;
 
@@ -89,7 +92,9 @@ const Navbar = () => {
         </Left>
         <Center>
           <Logo>
-            Shop by <br /> <Span>Tewo.</Span>
+            <Link to="/">
+              Shop by <br /> <Span>Tewo.</Span>
+            </Link>
           </Logo>
         </Center>
         <Right>

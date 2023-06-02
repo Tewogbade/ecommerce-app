@@ -21,7 +21,7 @@ const Info = styled.div`
 `;
 
 const Container = styled.div`
-  flex: 1;
+  /* flex: 1; */
   margin: 5px;
   min-width: 280px;
   height: 350px;
@@ -64,26 +64,54 @@ const Icon = styled.div`
     transform: scale(1.1);
   }
 `;
+const MainContainer = styled.div`
+  flex: 1;
+  /* margin: 5px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+`;
+const Detail = styled.div`
+  display: block;
+  justify-content: start;
+  text-align: start;
+  margin-bottom: 20px;
+`;
+const Title = styled.div`
+  margin-bottom: 10px;
+`;
+const Price = styled.span`
+  font-weight: bold;
+`;
 
 const Product = ({ item }) => {
   return (
-    <Container>
-      <Circle />
-      <Image src={item.img} />
-      <Info>
-        <Icon>
-          <ShoppingCartOutlinedIcon />
-        </Icon>
-        <Icon>
-          <Link to={`/product/${item._id}`}>
-            <SearchOutlinedIcon />
-          </Link>
-        </Icon>
-        <Icon>
-          <FavoriteBorderOutlinedIcon />
-        </Icon>
-      </Info>
-    </Container>
+    <MainContainer>
+      <Container>
+        <Circle />
+        <Image src={item.img} />
+        <Info>
+          <Icon>
+            <ShoppingCartOutlinedIcon />
+          </Icon>
+          <Icon>
+            <Link to={`/product/${item._id}`}>
+              <SearchOutlinedIcon />
+            </Link>
+          </Icon>
+          <Icon>
+            <FavoriteBorderOutlinedIcon />
+          </Icon>
+        </Info>
+      </Container>
+
+      <Detail>
+        <Title>{item.title}</Title>
+        <Price> ${item.price}</Price>
+      </Detail>
+    </MainContainer>
   );
 };
 

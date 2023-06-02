@@ -1,25 +1,28 @@
 export const sliderItems = [
   {
     id: 1,
-    img: "https://i.ibb.co/DG69bQ4/2.png",
-    title: "SUMMER SALE",
+    img: "https://www.pavidas.com/images.pavidas.com/P23---nike---DC5094100.JPG",
+    title: "ACTIVE WEARS",
     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS",
-    bg: "f5fafd",
+    bg: "f2F1ED",
+    cat: "activewear",
   },
 
   {
     id: 2,
-    img: "https://i.ibb.co/DG69bQ4/2.png",
-    title: "AUTUMN COLLECTION",
+    img: "https://i.ibb.co/cXFnLLV/3.png",
+    title: "SUMMER COLLECTION",
     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS",
     bg: "fcf1ed",
+    cat: "Summerwear",
   },
   {
     id: 3,
     img: "https://i.ibb.co/cXFnLLV/3.png",
-    title: "LOUNGE WEAR LOVE",
+    title: "WINTER COLLECTION",
     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS",
     bg: "fbf0f4",
+    cat: "Winterwear",
   },
 ];
 
