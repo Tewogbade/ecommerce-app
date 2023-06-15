@@ -1,19 +1,30 @@
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-// import { popularProducts } from "../data";
 import Product from "./Product";
-import { useEffect, useState } from "react";
 import axios from "axios";
 
 const Container = styled.div`
-  display: flex;
   padding: 20px;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+`;
+
+const LoadingContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Adjust height as needed */
+`;
+
+const LoadingText = styled.p`
+  font-size: 18px;
 `;
 
 const Products = ({ cat, filters, sort }) => {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
+  const [loading, setLoading] = useState(true); // New loading state
 
   useEffect(() => {
     const getProducts = async () => {
@@ -25,25 +36,13 @@ const Products = ({ cat, filters, sort }) => {
         );
         setProducts(res.data);
       } catch (err) {
-        console.error("Error fetching products:", err);
+        // Handle error if necessary
+      } finally {
+        setLoading(false); // Set loading to false when data is fetched
       }
     };
     getProducts();
   }, [cat]);
-
-  // useEffect(() => {
-  //   const getProducts = async () => {
-  //     try {
-  //       const res = await axios.get(
-  //         cat
-  //           ? `http://localhost:5000/api/products?category=${cat}`
-  //           : "http://localhost:5000/api/products"
-  //       );
-  //       setProducts(res.data);
-  //     } catch (err) {}
-  //   };
-  //   getProducts();
-  // }, [cat]);
 
   useEffect(() => {
     cat &&
@@ -72,15 +71,37 @@ const Products = ({ cat, filters, sort }) => {
     }
   }, [sort]);
 
+  if (loading) {
+    return (
+      <LoadingContainer>
+        <LoadingText>Loading...</LoadingText>
+      </LoadingContainer>
+    );
+  }
+
   return (
     <Container>
       {cat
         ? filteredProducts.map((item) => <Product item={item} key={item.id} />)
         : products
-            .slice(0, 8)
+            .slice(0, 10)
             .map((item) => <Product item={item} key={item.id} />)}
     </Container>
   );
 };
 
 export default Products;
+
+// useEffect(() => {
+//   const getProducts = async () => {
+//     try {
+//       const res = await axios.get(
+//         cat
+//           ? `http://localhost:5000/api/products?category=${cat}`
+//           : "http://localhost:5000/api/products"
+//       );
+//       setProducts(res.data);
+//     } catch (err) {}
+//   };
+//   getProducts();
+// }, [cat]);

@@ -1,15 +1,6 @@
 export const sliderItems = [
   {
     id: 1,
-    img: "https://www.pavidas.com/images.pavidas.com/P23---nike---DC5094100.JPG",
-    title: "ACTIVE WEARS",
-    desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS",
-    bg: "f2F1ED",
-    cat: "activewear",
-  },
-
-  {
-    id: 2,
     img: "https://i.ibb.co/cXFnLLV/3.png",
     title: "SUMMER COLLECTION",
     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS",
@@ -17,12 +8,20 @@ export const sliderItems = [
     cat: "Summerwear",
   },
   {
-    id: 3,
-    img: "https://i.ibb.co/cXFnLLV/3.png",
+    id: 2,
+    img: "https://cdn.shopify.com/s/files/1/0071/4309/6372/products/006OLIVE11_1280x1280.jpg?v=1661343186",
     title: "WINTER COLLECTION",
     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS",
-    bg: "fbf0f4",
+    bg: "ffffff",
     cat: "Winterwear",
+  },
+  {
+    id: 3,
+    img: "https://www.pavidas.com/images.pavidas.com/P23---nike---DC5094100.JPG",
+    title: "ACTIVE WEARS",
+    desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS",
+    bg: "f2F1ED",
+    cat: "activewear",
   },
 ];
 
