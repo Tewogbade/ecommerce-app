@@ -9,7 +9,7 @@ export const sliderItems = [
   },
   {
     id: 2,
-    img: "https://cdn.shopify.com/s/files/1/0071/4309/6372/products/006OLIVE11_1280x1280.jpg?v=1661343186",
+    img: "https://cdn.shopify.com/s/files/1/0104/4548/8194/products/006CHARCOAL44_large.jpg?v=1662129360",
     title: "WINTER COLLECTION",
     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS",
     bg: "ffffff",
@@ -17,10 +17,10 @@ export const sliderItems = [
   },
   {
     id: 3,
-    img: "https://www.pavidas.com/images.pavidas.com/P23---nike---DC5094100.JPG",
+    img: "https://assets.macysassets.com/dyn_img/creativepages/105-02Q8020010.jpg",
     title: "ACTIVE WEARS",
     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS",
-    bg: "f2F1ED",
+    bg: "E6E6E6",
     cat: "activewear",
   },
 ];
